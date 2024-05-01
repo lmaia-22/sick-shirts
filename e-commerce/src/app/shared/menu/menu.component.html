@@ -1,0 +1,29 @@
+<p>
+	<button
+		type="button"
+		class="btn btn-outline-dark "
+		(click)="collapse.toggle()"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+		Menu
+	</button>
+</p>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" style="max-width: 300px">
+	<div ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills flex-column" orientation="vertical">
+		<ng-container ngbNavItem="top">
+			<button ngbNavLink>About</button>
+		</ng-container>
+		<ng-container ngbNavItem="middle">
+			<button ngbNavLink>Shop</button>
+		</ng-container>
+		<ng-container ngbNavItem="middle">
+			<button ngbNavLink>Contact</button>
+		</ng-container>
+        <ng-container ngbNavItem="bottom">
+			<button ngbNavLink>FAQ</button>
+		</ng-container>
+	</div>
+
+	<div [ngbNavOutlet]="nav" class="ms-4"></div>
+</div>
