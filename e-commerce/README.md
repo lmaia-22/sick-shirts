@@ -31,6 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - About
  - Shop
  - Contacts
+ - Become a Creator
  - FAQ
 
 ### About
@@ -39,6 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Best Sellers
 - Some of the charities we work with
 - Some testimonals
+- Some of our limited edition
 
 ### Shop
 - All products

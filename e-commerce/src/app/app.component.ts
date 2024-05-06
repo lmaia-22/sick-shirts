@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbSidebarService  } from '@nebular/theme';
 import { MenuComponent } from './shared/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,7 +11,8 @@ import { MenuComponent } from './shared/menu/menu.component';
     NbLayoutModule,
     NbSidebarModule,
     NbButtonModule,
-    MenuComponent
+    MenuComponent,
+    HomeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
