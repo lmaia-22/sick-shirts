@@ -1,14 +1,15 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NgbNavModule, NgbCollapseModule  } from '@ng-bootstrap/ng-bootstrap';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon'
 @Component({
   selector: 'app-menu',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [ NgbCollapseModule, NgbNavModule],
+  imports: [ MatIconModule, MatSidenavModule, MatButtonModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-  active = 'top';
-  isCollapsed = true;
+
 }

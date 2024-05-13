@@ -2,11 +2,10 @@ import { Component, ViewChild, ElementRef, AfterViewInit, Renderer2  } from '@an
 import { Application } from '@splinetool/runtime';
 import { PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { LayoutComponent } from '../../shared/layout/layout.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [LayoutComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

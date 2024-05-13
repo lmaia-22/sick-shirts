@@ -1,29 +1,17 @@
-<p>
-	<button
-		type="button"
-		class="btn btn-outline-dark "
-		(click)="collapse.toggle()"
-		[attr.aria-expanded]="!isCollapsed"
-		aria-controls="collapseExample"
-	>
-		Menu
-	</button>
-</p>
-<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" style="max-width: 300px">
-	<div ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills flex-column" orientation="vertical">
-		<ng-container ngbNavItem="top">
-			<button ngbNavLink>About</button>
-		</ng-container>
-		<ng-container ngbNavItem="middle">
-			<button ngbNavLink>Shop</button>
-		</ng-container>
-		<ng-container ngbNavItem="middle">
-			<button ngbNavLink>Contact</button>
-		</ng-container>
-        <ng-container ngbNavItem="bottom">
-			<button ngbNavLink>FAQ</button>
-		</ng-container>
+<mat-drawer-container class="example-container" autosize>
+	<mat-drawer #drawer class="example-sidenav" mode="side">
+		<div class="menu-items-container">
+			<p class="h3"><a mat-button routerLink="/home" (click)="drawer.toggle()">Home</a></p>
+			<p class="h3"><a mat-button routerLink="/about" (click)="drawer.toggle()">About</a></p>
+			<p class="h3"><a mat-button routerLink="/shop" (click)="drawer.toggle()">Shop</a></p>
+			<p class="h3"><a mat-button routerLink="/faq" (click)="drawer.toggle()">FAQ</a></p>
+			<p class="h3"><a mat-button routerLink="/contact" (click)="drawer.toggle()">Contact</a></p>
+		</div>
+	</mat-drawer>
+  
+	<div class="example-sidenav-content">
+		<button type="button" mat-button (click)="drawer.toggle()">
+			<mat-icon class="icon-size" aria-hidden="false" aria-label="menu icon" fontIcon="menu"></mat-icon>
+		  </button>
 	</div>
-
-	<div [ngbNavOutlet]="nav" class="ms-4"></div>
-</div>
+  </mat-drawer-container>

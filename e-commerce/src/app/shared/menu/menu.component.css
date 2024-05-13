@@ -1,0 +1,61 @@
+:host {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.example-container {
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
+
+.example-sidenav {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* Remove background color */
+}
+
+.example-sidenav-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.menu-button {
+  margin: 10px;
+  background-color: transparent; /* Remove background color */
+  border: none; /* Optional: remove border */
+  padding: 10px; /* Increase padding to make the button larger */
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.menu-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.icon-size {
+  font-size: 100px;
+  height: 60px;
+  width: 60px;
+}
+
+.icon-size {
+  transform: scale(2);
+}
+
+.h3 {
+  font-size: 120px;
+}
